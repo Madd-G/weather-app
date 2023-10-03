@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => WeatherCubit()..getLocation(),
-      // create: (context) => WeatherCubit().._determinePosition(),
       child: MaterialApp(
           theme: themeData,
           debugShowCheckedModeBanner: false,

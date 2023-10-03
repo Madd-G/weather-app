@@ -55,7 +55,6 @@ class WeatherCubit extends Cubit<WeatherState> {
           (e) => LocationModel.fromJson(e),
         ),
       );
-      print('listLocationModel: $listLocationModel');
       double minDistance = 10000;
 
       for (var i = 0; i < listLocationModel.length; i++) {

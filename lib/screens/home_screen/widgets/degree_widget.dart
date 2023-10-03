@@ -12,7 +12,6 @@ class DegreeWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('degree rebuild');
 
     return BlocBuilder<WeatherCubit, WeatherState>(
       builder: (context, state) {

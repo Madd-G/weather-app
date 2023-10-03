@@ -12,7 +12,6 @@ class WeatherStatus extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('weather status rebuild');
 
     return BlocBuilder<WeatherCubit, WeatherState>(
       builder: (context, state) {

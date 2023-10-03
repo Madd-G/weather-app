@@ -83,7 +83,6 @@ class WeatherCarouselView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('weather_carousel rebuild');
 
     return BlocBuilder<WeatherCubit, WeatherState>(
       builder: (context, state) {

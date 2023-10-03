@@ -1,21 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/screens/home_screen/widgets/widgets.dart';
 
-import '../../cubit/weather_cubit.dart';
-
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
-  @override
-  void initState() {
-    context.read<WeatherCubit>().changeLocation(501191);
-    super.initState();
-  }
   @override
   Widget build(BuildContext context) {
     TextTheme textTheme = Theme.of(context).textTheme;
